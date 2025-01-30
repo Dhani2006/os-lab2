@@ -83,3 +83,5 @@ closedir(dir);
 // Exit the parent process
         exit(0);}}
 ```
+![executed output](C:\Users\DELL\Downloads\Screenshot from 2025-01-30 15-17-45.png)
+![executed output](C:\Users\DELL\Downloads\Screenshot from 2025-01-30 15-17-09.png)
