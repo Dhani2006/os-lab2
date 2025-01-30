@@ -11,7 +11,6 @@ To implement UNIX operating system calls fork, exec, getpid, exit, wait, close, 
 #include <fcntl.h>
 void print_permissions(mode_t mode) {
     char perms[10];
-
     // User permissions
     perms[0] = (mode & S_IRUSR) ? 'r' : '-';
     perms[1] = (mode & S_IWUSR) ? 'w' : '-';
@@ -26,43 +25,30 @@ void print_permissions(mode_t mode) {
     perms[6] = (mode & S_IROTH) ? 'r' : '-';
     perms[7] = (mode & S_IWOTH) ? 'w' : '-';
     perms[8] = (mode & S_IXOTH) ? 'x' : '-';
-
-    perms[9] = '\0';  // Null-terminate the string
-
-    printf("Permissions: %s\n", perms);
-}
-
-void list_directory(const char *path) {
+perms[9] = '\0';  // Null-terminate the string
+printf("Permissions: %s\n", perms);
+}void list_directory(const char *path) {
     DIR *dir = opendir(path);
     struct dirent *entry;
-    
-    if (dir == NULL) {
+if (dir == NULL) {
         perror("opendir");
         return;
-    }
-
-    printf("Listing files in directory: %s\n", path);
+    }printf("Listing files in directory: %s\n", path);
     while ((entry = readdir(dir)) != NULL) {
         printf("%s ", entry->d_name);
     }
     printf("\n");
-
-    closedir(dir);
-}
-
-int main() {
+closedir(dir);
+}int main() {
     pid_t pid;
     int status;
     struct stat file_info;
-
-    // Using fork to create a new child process
+// Using fork to create a new child process
     pid = fork();
     if (pid < 0) {
         perror("fork failed");
         exit(1);
-    }
-
-    if (pid == 0) {  // Child process
+    }if (pid == 0) {  // Child process
         printf("Child Process: PID = %d\n", getpid());
 	printf("Child process list the files in the current directory:\n");
         // Using exec to replace the process image
@@ -76,30 +62,22 @@ int main() {
         wait(&status);
         if (WIFEXITED(status)) {
             printf("Child process exited with status %d\n", WEXITSTATUS(status));
-        }
-
-        // Using stat to get information about a file
+        }// Using stat to get information about a file
         if (stat("example.txt", &file_info) == 0) {
             printf("File 'example.txt' exists\n");
             print_permissions(file_info.st_mode);  // Print human-readable permissions
             printf("File size: %ld bytes\n", file_info.st_size);
         } else {
             perror("stat failed");
-        }
-
-        // Using opendir and readdir to list files in a directory
+        }// Using opendir and readdir to list files in a directory
 	printf("Parent process listing files in parent directory:\n");
         list_directory("..");
-
-        // Demonstrating file operations with open, write, and close
+	// Demonstrating file operations with open, write, and close
         int fd = open("testfile.txt", O_WRONLY | O_CREAT, 0644);
         if (fd == -1) {
             perror("open failed");
             exit(1);
-        }
-        
-        write(fd, "Hello, this is a test file!\n", 26);
+        }write(fd, "Hello, this is a test file!\n", 26);
         close(fd);  // Closing the file
-
-        // Exit the parent process
+// Exit the parent process
         exit(0);}}`
