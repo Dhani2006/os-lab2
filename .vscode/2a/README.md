@@ -1,7 +1,9 @@
 ## Program Statement:
 To implement UNIX operating system calls fork, exec, getpid, exit, wait, close, stat, opendir and readdir
 # Source code:
-`#include <stdio.h>
+
+`
+#include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/wait.h>
@@ -80,4 +82,5 @@ closedir(dir);
         }write(fd, "Hello, this is a test file!\n", 26);
         close(fd);  // Closing the file
 // Exit the parent process
-        exit(0);}}`
+        exit(0);}}
+`
