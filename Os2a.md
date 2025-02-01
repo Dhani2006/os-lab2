@@ -106,5 +106,7 @@ int main() {
         exit(0);
     }
 }```
+___
+## Output
 ![output](C:\Users\DELL\Downloads\2a2.png)
 ![output2]("C:\Users\DELL\Downloads\2a1.png")
