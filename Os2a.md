@@ -110,4 +110,4 @@ int main() {
 }
 ```
 ## Output
-![output](C:\Users\DELL\OneDrive\Pictures\Screenshots\os2aOp.png)
+![output](os2aOp.png)
