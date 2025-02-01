@@ -1,7 +1,9 @@
 ## Program Statement:
 To implement UNIX operating system calls fork, exec, getpid, exit, wait, close, stat, opendir and readdir
+
 # Source Code:
-```#include <stdio.h>
+```
+#include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/wait.h>
@@ -105,8 +107,8 @@ int main() {
         // Exit the parent process
         exit(0);
     }
-}```
-___
+}
+```
 ## Output
 ![output](C:\Users\DELL\Downloads\2a2.png)
 ![output2]("C:\Users\DELL\Downloads\2a1.png")
