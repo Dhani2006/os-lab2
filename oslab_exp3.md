@@ -163,4 +163,5 @@ int main() {
     return 0;
 }
 ```
+## Output
 ![img](https://github.com/Dhani2006/os-lab2/blob/main/oslabexp3.png)
