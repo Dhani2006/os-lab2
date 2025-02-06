@@ -122,5 +122,5 @@ int main() {
 }
 ```
 # output
-![img2]()
+![img2](https://github.com/Dhani2006/os-lab2/blob/main/oslab4_2.png)
 
