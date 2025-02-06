@@ -1,5 +1,5 @@
 ## Program Statement
-To stimulate CPU Scheduling Algorithms like FCFS, SJF, RR and Priority using C
+To stimulate CPU Scheduling Algorithms like FCFS, SJF, RR and Priority using C programs
 ## Source Code
 ```
 #include <stdio.h>
