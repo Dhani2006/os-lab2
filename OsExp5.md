@@ -84,4 +84,4 @@ int main() {
     return 0;
 }
 ```
-![exp5_img](https://github.com/Dhani2006/os-lab2/blob/main/OsExp5.png.jpg)
+![exp5_img](https://github.com/Dhani2006/os-lab2/blob/main/OsExp5.png)
