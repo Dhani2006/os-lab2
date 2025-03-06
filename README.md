@@ -12,4 +12,4 @@
 ![screenshot](Screenshot(35).png)
 ![screenshot](Screenshot(36).png)
 ![screenshot](Screenshot(37).png)
-![screenshot](Screenshot(16).png)
+![screenshot](https://github.com/Dhani2006/os-lab2/blob/main/Screenshot%20(16).png)
