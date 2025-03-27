@@ -14,3 +14,8 @@
 ![screenshot](Screenshot(37).png)
 ![screenshot](https://github.com/Dhani2006/os-lab2/blob/main/Screenshot%20(16).png)
 ![img](https://github.com/Dhani2006/os-lab2/blob/main/IMG_20250327_172607.png)
+![img](https://github.com/Dhani2006/os-lab2/blob/main/Screenshot%20from%202025-03-20%2015-25-02.png)
+![img]()
+![img]()
+![img]()
+!(img]()
