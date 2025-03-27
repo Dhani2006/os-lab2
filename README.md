@@ -18,4 +18,4 @@
 ![img](https://github.com/Dhani2006/os-lab2/blob/main/Screenshot%20from%202025-03-20%2015-25-15.png)
 ![img](https://github.com/Dhani2006/os-lab2/blob/main/Screenshot%20from%202025-03-20%2015-26-52.png)
 ![img](https://github.com/Dhani2006/os-lab2/blob/main/anu11.png)
-!(img]()
+!(img](https://github.com/Dhani2006/os-lab2/blob/main/anu12.png)
